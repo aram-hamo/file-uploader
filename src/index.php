@@ -1,11 +1,23 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>File Upload</title>
   </head>
+<style>
+
+*{
+  margin:unset;
+  text-decoration:unset;
+  scrollbar-width:none;
+}
+.fileInpu{
+  text-align: center;
+}
+
+</style>
 <body>
-  <center><h1>Upload</h1></center>
   <form class="form-control form" method="post" enctype="multipart/form-data">
-    <input name="files[]" multiple=multiple type="file" />
+    <input name="files[]" class="fileInput"multiple=multiple type="file" />
     <input name="submit" type="submit" value="upload" />
   </form>
 </body>
