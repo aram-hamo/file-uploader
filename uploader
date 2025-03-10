@@ -4,6 +4,6 @@ build(){
 docker build -t file-uploader .
 }
 run(){
-docker run -p 80:80 -v $HOME/downloads/:/var/http/content/ file-uploader
+docker run -p 80:80 -v $HOME/downloads/:/srv/http/content/ file-uploader
 }
 $1
